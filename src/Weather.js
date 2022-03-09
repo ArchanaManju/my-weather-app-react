@@ -109,7 +109,7 @@ export default function Weather(props) {
             </div>
             <small>
               <a
-                href="https://github.com/ArchanaManju/vanilla-WeatherApp-week8"
+                href="https://github.com/ArchanaManju/my-weather-app-react"
                 target="_blank"
                 rel="noreferrer"
               >
