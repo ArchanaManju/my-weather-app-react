@@ -7,7 +7,7 @@ export default function Weather(props) {
   const api_key = "2b354ee10180a8ec5f31e475798a3953";
   let [city, setCity] = useState();
   let [loaded, setLoaded] = useState(false);
-  let [weather, setweather] = useState({});
+  let [weather, setWeather] = useState({});
   function updateCity(event) {
     setCity(event.target.value);
   }
@@ -36,7 +36,7 @@ export default function Weather(props) {
   }
   function handleResponse(response) {
     setLoaded(true);
-    setweather({
+    setWeather({
       temperature: response.data.main.temp,
       humdity: response.data.main.humidity,
       description: response.data.weather[0].description,
@@ -74,7 +74,6 @@ export default function Weather(props) {
                 </div>
               </form>
               <div className="overview">
-                <h1 id="city"></h1>
                 <ul>
                   <li>Last updated: {weather.updateDate}</li>
                   <li id="description"></li>
@@ -92,7 +91,7 @@ export default function Weather(props) {
                     <div className="float-left">
                       <strong id="temperature">{weather.temperature}</strong>
                       <span className="units"></span>
-                      <a href="#" id="celsius-link" className="active">
+                      <a href="/" id="celsius-link" className="active">
                         °C
                       </a>
                     </div>
