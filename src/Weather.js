@@ -128,6 +128,13 @@ export default function Weather(props) {
           {action}
         </form>
         <Rings color="#00BFFF" height={80} width={80} />
+        <a
+          href="https://github.com/ArchanaManju/my-weather-app-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open-source code
+        </a>
       </div>
     );
   }
